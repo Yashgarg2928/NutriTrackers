@@ -1,0 +1,102 @@
+        * {
+            box-sizing: border-box;
+        
+        }   
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #8abfa0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            width: 90%;
+            max-width: 400px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .header {
+            color: black;
+            position: fixed;      
+            top: 0;              
+            left: 0;
+            width: 100%;          
+            background: rgb(255, 255, 255);   
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+            z-index: 1000;       
+        }
+
+        .logo {
+            width: 50px;
+            height: auto;
+        }
+
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        input,button {
+            width: 100%;
+            padding: 12px;
+            font-size: 1rem;
+            border:1px solid #ccc ;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+
+        #scan-button {
+            background: #4CAF50;
+            color: white;
+        }
+
+        #search-button {
+            background: #2196F3;
+            color: white;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        #result {
+            margin-top: 15px;
+            font-size: 1rem;
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .container {
+                padding: 20px;
+            }
+            .logo {
+                 width: 40px;
+            }
+            .header h1 {
+                 font-size: 1.2rem;
+            }
+        }
