@@ -1,18 +1,11 @@
-//
-// Final Merged Script (for all pages)
-//
 
-//
-// Page-Specific Logic
-// Runs after the HTML document has been fully loaded.
-//
 document.addEventListener('DOMContentLoaded', () => {
 
     // --- LOGIC FOR THE INDEX PAGE (index.html) ---
     const searchButton = document.querySelector("#search-button");
     const productInput = document.querySelector("#product-input");
 
-    if (searchButton && productInput) { // This code will only run on index.html
+    if (searchButton && productInput) {
         searchButton.addEventListener("click", async () => {
             const productName = productInput.value;
             if (!productName) {
@@ -52,9 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-//
-// Shared Functions (can be called from any page)
-//
+
 
 /**
  * Initiates the camera and resolves with a barcode when one is found.
@@ -159,7 +150,6 @@ async function generateNutritionData(barcode) {
 
     return {
         productName: product.product_name || "Unknown Product",
-        // ✅ NEW: Add the image URL to the returned object
         imageUrl: product.image_front_url || product.image_url, 
         tableHTML: `
             <table>
