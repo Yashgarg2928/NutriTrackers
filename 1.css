@@ -48,15 +48,7 @@
             margin-bottom: 25px;
         }
 
-        input {
-            width: 100%;
-            padding: 12px;
-            font-size: 1rem;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            margin-bottom: 15px;
-        }
-
+        
         input,button {
             width: 100%;
             padding: 12px;
@@ -66,13 +58,39 @@
             cursor: pointer;
             margin-bottom: 15px;
         }
-
+        
+        input {
+            margin-top: 10px;
+            width: 100%;
+            padding: 12px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            cursor:text;
+        }
         #scan-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
             background: #4CAF50;
+            border-radius: 10px;
+        }
+
+        #scan-button a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
             color: white;
+            text-decoration: none;
+
         }
 
         #search-button {
+            margin-top: 30px;
             background: #2196F3;
             color: white;
         }

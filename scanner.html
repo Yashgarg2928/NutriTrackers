@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scanner</title>
+    <script src="https://cdn.jsdelivr.net/npm/@zxing/library@0.19.1/umd/index.min.js"></script>
+</head>
+<style>
+    *{
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+    }
+    html, body{
+        height: 100%;
+        width: 100%;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    video {
+        width: 100%;
+    }
+    button {
+        height: 40px;
+        width: 90px;
+        border-radius: 10px;
+        background-color: greenyellow;
+        cursor: pointer;
+    }
+    .stop-scan{
+        width: 90px;
+        height: 40px;
+        background-color: red;
+        border-radius: 10px;
+        border: 2px solid ;
+    }
+    .stop-scan a{
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+    }
+
+</style>
+<body>
+    <video id="video"></video>
+    <button id="scan-button">Scan</button>
+    <div class="stop-scan">
+        <a href="index.html">Stop</a>
+    </div>
+</body>
+<script src = "script.js"></script>
+
+</html>

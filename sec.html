@@ -4,55 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NutriTracker - Results</title>
-
-    
     <link rel="stylesheet" href="sec.css">
-
-    
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-
     <header>
         <img src="logo.png" class="logo" alt="NutriTracker Logo">
         <h2>Nutrition Details</h2>
     </header>
-
     <div class="main">
-
-        
         <div class="left">
             <h3>Scanned Product</h3>
-            <img id="product-image" src="sample.jpg" alt="Scanned Product">
         </div>
-
-    
         <div class="right">
-
             <div class="chart-box">
                 <h3>Nutrition Breakdown</h3>
                 <canvas id="nutritionChart"></canvas>
             </div>
-
             <div class="table-box">
                 <h3>Nutrition Table</h3>
-                <table>
-                    <tr><th>Nutrient</th><th>Value</th></tr>
-                    <tr><td>Calories</td><td id="cal">250 kcal</td></tr>
-                    <tr><td>Sugars</td><td id="sug">14g</td></tr>
-                    <tr><td>Carbohydrates</td><td id="carb">30g</td></tr>
-                    <tr><td>Proteins</td><td id="pro">8g</td></tr>
-                    <tr><td>Fats</td><td id="fat">6g</td></tr>
-                </table>
             </div>
-
         </div>
-
+        
+        
     </div>
-   
-
+    <div class="buttondiv">
+        <div class="scan-more">
+            <a href="index.html">Scan More</a>
+        </div>
+    </div>
     
+    <script src="script.js"></script>
     <script src="second.js"></script>
-
 </body>
 </html>
