@@ -95,7 +95,7 @@ input, button {
 #scan-button {
     border-radius: 10px;
     height: 44px;
-    width: 348px;
+    width: 100%;
     background: var(--color-accent);
     color: var(--color-card-bg);
     border: 1px solid var(--color-accent);
